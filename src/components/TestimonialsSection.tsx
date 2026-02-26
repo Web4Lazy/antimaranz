@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
   const t = testimonials[current];
 
   return (
-    <section className="py-20 md:py-28 bg-surface-card bg-secondary-foreground">
+    <section className="py-20 md:py-28 section-light">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
