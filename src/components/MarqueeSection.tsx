@@ -4,7 +4,7 @@ const brands = Array.from({ length: 6 }, (_, i) => `Brand Partner ${i + 1}`);
 
 const MarqueeSection = () => {
   return (
-    <section className="py-16 border-y border-border/50 overflow-hidden">
+    <section className="section-light py-14 md:py-16 border-y border-border/50 overflow-hidden">
       <p className="text-center text-sm text-text-secondary uppercase tracking-widest mb-8">
         Scelto da chi vuole sentirsi sicuro
       </p>
