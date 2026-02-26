@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12">
 
-          <h2 className="text-3xl font-extrabold mb-4 text-primary md:text-5xl">
+          <h2 className="text-3xl font-extrabold mb-4 md:text-5xl text-secondary">
             Cosa Dicono i Nostri <span className="font-serif-italic font-normal">Clienti</span>
           </h2>
         </motion.div>
