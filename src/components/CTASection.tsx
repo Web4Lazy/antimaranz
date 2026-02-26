@@ -14,56 +14,60 @@ const CTASection = () => {
     setEmail("");
   };
 
-  return (
-    <section id="contatti" className="relative py-20 md:py-32 overflow-hidden section-accent">
+  return;
 
-      <div className="relative container mx-auto px-4 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Pronto a Sentirti{" "}
-            <span className="font-serif-italic font-normal">Sicuro?</span>
-          </h2>
-          <p className="text-text-secondary max-w-md mx-auto mb-8">
-            Ordina il tuo AntiMaranz oggi e non uscire mai più senza protezione.
-          </p>
-        </motion.div>
 
-        <motion.form
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          onSubmit={handleSubmit}
-          className="max-w-md mx-auto flex flex-col gap-4"
-        >
-          <input
-            type="text"
-            placeholder="Il tuo nome"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-            className="px-5 py-3 bg-white/20 border border-white/30 rounded-xl text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 transition-shadow"
-          />
-          <input
-            type="email"
-            placeholder="La tua email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="px-5 py-3 bg-white/20 border border-white/30 rounded-xl text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 transition-shadow"
-          />
-          <Button variant="heroOutline" size="lg" type="submit" className="border-white text-white hover:bg-white hover:text-primary">
-            Richiedi Info
-          </Button>
-        </motion.form>
-      </div>
-    </section>
-  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
 
 export default CTASection;
