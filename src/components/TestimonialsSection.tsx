@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
   const t = testimonials[current];
 
   return (
-    <section className="py-20 md:py-28 bg-surface-card bg-primary-foreground">
+    <section className="py-20 md:py-28 bg-surface-card bg-secondary-foreground">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12">
 
-          <h2 className="text-3xl font-extrabold mb-4 text-primary md:text-5xl">
+          <h2 className="text-3xl font-extrabold mb-4 text-secondary md:text-4xl">
             Cosa Dicono i Nostri <span className="font-serif-italic font-normal">Clienti</span>
           </h2>
         </motion.div>
@@ -62,7 +62,7 @@ const TestimonialsSection = () => {
               transition={{ duration: 0.4 }}
               className="bg-background rounded-2xl p-8 border border-border/50 text-center">
 
-              <Quote size={32} className="text-primary/30 mx-auto mb-4" />
+              <Quote size={32} className="mx-auto mb-4 text-primary" />
               <div className="flex justify-center gap-1 mb-6">
                 {[...Array(5)].map((_, i) =>
                 <Star key={i} size={16} className="fill-primary text-primary" />
