@@ -84,21 +84,6 @@ const HeroSection = () => {
                 <p className="text-sm text-text-secondary mt-1">Legale in Italia</p>
               </div>
             </div>
-            <div className="flex items-center gap-3 pt-4 border-t border-border/50">
-              <div className="flex -space-x-2">
-                {[...Array(4)].map((_, i) => {}
-
-
-
-
-
-
-                )}
-              </div>
-              <span className="text-sm text-text-secondary">
-                <span className="text-foreground font-semibold">500+</span> clienti soddisfatti
-              </span>
-            </div>
           </motion.div>
         </div>
       </div>
