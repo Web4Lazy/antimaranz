@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
-import { Shield, Target, Hand, Package } from "lucide-react";
+import { ShieldCheck, Crosshair, Fingerprint, Pocket } from "lucide-react";
 
 const features = [
   {
-    icon: Shield,
+    icon: ShieldCheck,
     title: "Legale al 100%",
     description: "Conforme alle normative italiane vigenti in materia di difesa personale.",
   },
   {
-    icon: Target,
+    icon: Crosshair,
     title: "Gittata Efficace",
     description: "Fino a 5 metri di distanza di sicurezza per la massima protezione.",
   },
   {
-    icon: Hand,
+    icon: Fingerprint,
     title: "Facile da Usare",
     description: "Attivazione rapida e design ergonomico per un utilizzo intuitivo.",
   },
   {
-    icon: Package,
+    icon: Pocket,
     title: "Compatto e Discreto",
     description: "Sta comodamente in tasca o in borsa, sempre pronto all'uso.",
   },
