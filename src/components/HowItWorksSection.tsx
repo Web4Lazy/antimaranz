@@ -44,9 +44,9 @@ const HowItWorksSection = () => {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Connecting line */}
-          <div className="hidden md:block absolute top-16 left-0 right-0 h-[2px] bg-border/50">
+          <div className="hidden md:block absolute top-16 left-0 right-0 h-[2px] bg-input">
             <motion.div
-              className="h-full bg-primary origin-left"
+              className="h-full bg-input origin-left"
               initial={{ scaleX: 0 }}
               animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }} />
