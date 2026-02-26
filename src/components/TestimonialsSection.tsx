@@ -62,7 +62,7 @@ const TestimonialsSection = () => {
               transition={{ duration: 0.4 }}
               className="bg-background rounded-2xl p-8 border border-border/50 text-center">
 
-              <Quote size={32} className="text-primary/30 mx-auto mb-4" />
+              <Quote size={32} className="mx-auto mb-4 text-primary" />
               <div className="flex justify-center gap-1 mb-6">
                 {[...Array(5)].map((_, i) =>
                 <Star key={i} size={16} className="fill-primary text-primary" />
