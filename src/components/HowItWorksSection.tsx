@@ -28,7 +28,7 @@ const HowItWorksSection = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section className="py-20 md:py-28 bg-primary-foreground" ref={ref}>
+    <section className="py-20 md:py-28 section-accent" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -44,9 +44,9 @@ const HowItWorksSection = () => {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Connecting line */}
-          <div className="hidden md:block absolute top-16 left-0 right-0 h-[2px] bg-border/50">
+          <div className="hidden md:block absolute top-16 left-0 right-0 h-[2px] bg-input">
             <motion.div
-              className="h-full bg-primary origin-left"
+              className="h-full bg-input origin-left"
               initial={{ scaleX: 0 }}
               animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }} />
