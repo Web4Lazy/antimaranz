@@ -36,7 +36,7 @@ const FeaturesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Perché Scegliere <span className="text-primary">AntiMaranz</span>
+            Perché Scegliere <span className="text-primary">AntiMaranz.it</span>
           </h2>
           <p className="text-text-secondary max-w-lg mx-auto">
             Qualità, legalità e affidabilità: tutto in un unico prodotto.
