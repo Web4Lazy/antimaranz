@@ -26,7 +26,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-surface-card">
+    <section className="section-light py-20 md:py-32">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -43,7 +43,7 @@ const FeaturesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}

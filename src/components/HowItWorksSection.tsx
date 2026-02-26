@@ -28,7 +28,7 @@ const HowItWorksSection = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section className="py-24 md:py-32" ref={ref}>
+    <section className="section-accent py-20 md:py-32" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -44,9 +44,9 @@ const HowItWorksSection = () => {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Connecting line */}
-          <div className="hidden md:block absolute top-16 left-0 right-0 h-[2px] bg-border/50">
+          <div className="hidden md:block absolute top-16 left-0 right-0 h-[2px] bg-white/30">
             <motion.div
-              className="h-full bg-primary origin-left"
+              className="h-full bg-white origin-left"
               initial={{ scaleX: 0 }}
               animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
@@ -63,10 +63,10 @@ const HowItWorksSection = () => {
                 transition={{ duration: 0.6, delay: i * 0.2 }}
                 className="text-center relative"
               >
-                <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-6 relative z-10 shadow-accent">
-                  <step.icon size={22} className="text-primary-foreground" />
+                <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6 relative z-10">
+                  <step.icon size={22} className="text-white" />
                 </div>
-                <span className="text-5xl font-extrabold text-surface-elevated block mb-2">{step.num}</span>
+                <span className="text-5xl font-extrabold text-white/15 block mb-2">{step.num}</span>
                 <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                 <p className="text-sm text-text-secondary">{step.description}</p>
               </motion.div>

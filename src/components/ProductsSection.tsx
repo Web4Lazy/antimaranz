@@ -31,7 +31,7 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
-      className="relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer group"
+      className="relative aspect-[3/4] md:aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer group"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -76,7 +76,7 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
 
 const ProductsSection = () => {
   return (
-    <section id="prodotti" className="py-24 md:py-32">
+    <section id="prodotti" className="py-20 md:py-32">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

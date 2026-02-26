@@ -15,11 +15,7 @@ const CTASection = () => {
   };
 
   return (
-    <section id="contatti" className="relative py-24 md:py-32 overflow-hidden">
-      {/* Placeholder background */}
-      <div className="absolute inset-0 bg-surface-card">
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
-      </div>
+    <section id="contatti" className="relative py-20 md:py-32 overflow-hidden section-accent">
 
       <div className="relative container mx-auto px-4 text-center">
         <motion.div
@@ -51,7 +47,7 @@ const CTASection = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="px-5 py-3 bg-background border border-border rounded-xl text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+            className="px-5 py-3 bg-white/20 border border-white/30 rounded-xl text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 transition-shadow"
           />
           <input
             type="email"
@@ -59,9 +55,9 @@ const CTASection = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="px-5 py-3 bg-background border border-border rounded-xl text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+            className="px-5 py-3 bg-white/20 border border-white/30 rounded-xl text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 transition-shadow"
           />
-          <Button variant="hero" size="lg" type="submit">
+          <Button variant="heroOutline" size="lg" type="submit" className="border-white text-white hover:bg-white hover:text-primary">
             Richiedi Info
           </Button>
         </motion.form>

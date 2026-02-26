@@ -33,7 +33,7 @@ const FAQSection = () => {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-20 md:py-32">
       <div className="container mx-auto px-4 max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
