@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
       </div>
 
-      <div className="relative container mx-auto px-4 pt-24 pb-16">
+      <div className="relative container mx-auto px-6 md:px-8 pt-24 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left text */}
           <div>

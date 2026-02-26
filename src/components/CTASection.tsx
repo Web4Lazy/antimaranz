@@ -15,7 +15,7 @@ const CTASection = () => {
   };
 
   return (
-    <section id="contatti" className="relative py-20 md:py-28 overflow-hidden">
+    <section id="contatti" className="relative py-24 md:py-32 overflow-hidden">
       {/* Placeholder background */}
       <div className="absolute inset-0 bg-surface-card">
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />

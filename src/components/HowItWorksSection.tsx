@@ -28,7 +28,7 @@ const HowItWorksSection = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section className="py-20 md:py-28" ref={ref}>
+    <section className="py-24 md:py-32" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
