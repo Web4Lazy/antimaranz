@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
   const t = testimonials[current];
 
   return (
-    <section className="py-20 md:py-28 section-light">
+    <section className="py-20 md:py-28 bg-surface-card bg-secondary-foreground">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
                 <Star key={i} size={16} className="fill-primary text-primary" />
                 )}
               </div>
-              <p className="text-lg leading-relaxed mb-6 text-primary-foreground">"{t.text}"</p>
+              <p className="text-lg leading-relaxed mb-6 text-secondary">"{t.text}"</p>
               <div className="flex items-center justify-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
                   <span className="text-xs font-bold text-muted-foreground">{t.initials}</span>
