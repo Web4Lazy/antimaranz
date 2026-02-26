@@ -42,9 +42,11 @@ const Navbar = () => {
             <button
               key={link.href}
               onClick={() => scrollTo(link.href)}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+              className="nav-flip-link text-sm font-medium relative overflow-hidden"
+              style={{ height: '1.5em' }}
             >
-              {link.label}
+              <span className="nav-flip-top block text-muted-foreground transition-transform duration-300">{link.label}</span>
+              <span className="nav-flip-bottom block text-foreground transition-transform duration-300 absolute left-0 w-full after:content-[''] after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 after:bg-primary">{link.label}</span>
             </button>
           ))}
           <Button variant="navCta" size="sm" onClick={() => scrollTo("#prodotti")}>

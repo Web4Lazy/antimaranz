@@ -184,6 +184,20 @@
   }
 }
 
+/* Nav flip link animation */
+.nav-flip-link .nav-flip-top {
+  transform: translateY(0);
+}
+.nav-flip-link .nav-flip-bottom {
+  transform: translateY(0);
+}
+.nav-flip-link:hover .nav-flip-top {
+  transform: translateY(-100%);
+}
+.nav-flip-link:hover .nav-flip-bottom {
+  transform: translateY(-100%);
+}
+
 /* Marquee animation */
 @keyframes marquee {
   0% { transform: translateX(0); }
