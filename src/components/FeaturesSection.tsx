@@ -35,12 +35,10 @@ const FeaturesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12">
 
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">Perché acquistare da AntiMaranz.it
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">Perché acquistare da{" "}
             <span className="text-primary">AntiMaranz.it</span>
           </h2>
-          <p className="text-text-secondary max-w-lg mx-auto">Qualità, legalità e affidabilità: tutto in un unico posto.
-
-          </p>
+          <p className="text-text-secondary max-w-lg mx-auto">Qualità, legalità e affidabilità: tutto in un unico posto.</p>
         </motion.div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
