@@ -1,5 +1,5 @@
 const footerLinks = {
-  Prodotti: ["AntiMaranz Compact", "AntiMaranz Pro"],
+  Prodotti: ["AntiMaranz", "Viper"],
   Informazioni: ["Chi Siamo", "Come Funziona", "FAQ"],
   Legale: ["Privacy Policy", "Termini e Condizioni", "Cookie Policy"],
 };
