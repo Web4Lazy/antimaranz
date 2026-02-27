@@ -38,9 +38,8 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
       onMouseLeave={() => setHovered(false)}
     >
       {/* Placeholder image bg */}
-      <div className="absolute inset-0 bg-surface-elevated flex flex-col items-center justify-center gap-3">
-        <product.icon size={48} className="text-muted-foreground/40" />
-        <span className="text-sm text-muted-foreground/60">{product.placeholder}</span>
+      <div className="absolute inset-0 bg-surface-elevated flex items-center justify-center">
+        <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
       </div>
 
       {/* Overlay panel */}
