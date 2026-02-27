@@ -7,7 +7,7 @@ import productViper from "@/assets/product-viper.png";
 
 const products = [
   {
-    name: "AntiMaranz Compact",
+    name: "AntiMaranz",
     description: "Spray compatto da borsa, 15ml, gittata 3 metri. Perfetto per chi vuole protezione discreta e sempre a portata di mano.",
     icon: Shield,
     image: productAntimaranz,
