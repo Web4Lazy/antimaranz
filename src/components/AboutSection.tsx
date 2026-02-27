@@ -3,10 +3,10 @@ import { useRef, useEffect, useState } from "react";
 
 const stats = [
   { value: 25, suffix: "+", label: "Anni di Esperienza" },
-  { value: 0, suffix: "", label: "SICUREZZA" },
+  { text: "SICUREZZA", label: "Garanzia totale" },
   { value: 98, suffix: "%", label: "Clienti soddisfatti" },
   { value: 100, suffix: "%", label: "Legale e certificato" },
-];
+] as const;
 
 const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) => {
   const ref = useRef(null);
@@ -76,7 +76,11 @@ const AboutSection = () => {
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="bg-surface-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
               >
-                <AnimatedNumber value={stat.value} suffix={stat.suffix} />
+                {'value' in stat ? (
+                  <AnimatedNumber value={stat.value} suffix={stat.suffix} />
+                ) : (
+                  <span className="text-3xl md:text-4xl font-extrabold text-primary">{stat.text}</span>
+                )}
                 <p className="text-sm text-text-secondary mt-2">{stat.label}</p>
               </motion.div>
             ))}
