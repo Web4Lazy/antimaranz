@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background placeholder */}
       <div className="absolute inset-0 bg-surface-card">
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
+        <div className="absolute inset-0 bg-background/30" />
       </div>
 
       <div className="relative container mx-auto px-4 pt-24 pb-16">
