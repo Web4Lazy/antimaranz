@@ -10,13 +10,13 @@ const products = [
     name: "AntiMaranz Compact",
     description: "Spray compatto da borsa, 15ml, gittata 3 metri. Perfetto per chi vuole protezione discreta e sempre a portata di mano.",
     icon: Shield,
-    placeholder: "Immagine Prodotto 1",
+    image: productAntimaranz,
   },
   {
     name: "AntiMaranz Pro",
     description: "Spray professionale, 40ml, gittata 5 metri, con clip cintura. La scelta per chi non scende a compromessi sulla sicurezza.",
     icon: Shield,
-    placeholder: "Immagine Prodotto 2",
+    image: productViper,
   },
 ];
 
