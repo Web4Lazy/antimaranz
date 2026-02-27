@@ -69,7 +69,7 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
 
 const ProductsSection = () => {
   return (
-    <section id="prodotti" className="py-20 md:py-32">
+    <section id="prodotti" className="py-20 md:py-32 bg-[#36362e]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
