@@ -68,7 +68,7 @@ const HowItWorksSection = () => {
                 </div>
                 <span className="text-5xl font-extrabold text-surface-elevated block mb-2 text-secondary">{step.num}</span>
                 <h3 className="text-xl font-bold mb-2 text-secondary">{step.title}</h3>
-                <p className="text-sm text-muted-foreground">{step.description}</p>
+                <p className="text-sm text-text-secondary text-secondary">{step.description}</p>
               </motion.div>
             )}
           </div>
