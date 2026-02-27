@@ -42,30 +42,25 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
         <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
       </div>
 
-      {/* Overlay panel */}
+      {/* Overlay panel - hidden by default, slides up on hover */}
       <motion.div
-        className="absolute bottom-0 left-0 right-0 bg-surface-dark/95 px-6 flex flex-col justify-end"
+        className="absolute bottom-0 left-0 right-0 bg-black/90 px-6 flex flex-col justify-end overflow-hidden"
         initial={false}
-        animate={{ height: hovered ? "75%" : "25%" }}
+        animate={{ height: hovered ? "60%" : "0%" }}
         transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <div className="py-6">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 rounded-full bg-accent-soft flex items-center justify-center">
-              <product.icon size={18} className="text-primary" />
-            </div>
-            <h3 className="text-lg font-bold text-foreground">{product.name}</h3>
-          </div>
+          <h3 className="text-lg font-bold text-white mb-2">{product.name}</h3>
 
           <motion.div
             initial={false}
             animate={{ opacity: hovered ? 1 : 0 }}
             transition={{ duration: 0.3, delay: hovered ? 0.15 : 0 }}
           >
-            <p className="text-sm text-text-secondary mb-5 leading-relaxed">
+            <p className="text-sm text-white/80 mb-5 leading-relaxed">
               {product.description}
             </p>
-            <Button variant="pill" size="sm">
+            <Button variant="pill" size="sm" className="bg-white text-black hover:bg-white/90">
               Dettagli <ArrowRight size={14} />
             </Button>
           </motion.div>
