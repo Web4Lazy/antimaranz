@@ -13,7 +13,7 @@ const products = [
     image: productAntimaranz,
   },
   {
-    name: "AntiMaranz Pro",
+    name: "Viper",
     description: "Spray professionale, 40ml, gittata 5 metri, con clip cintura. La scelta per chi non scende a compromessi sulla sicurezza.",
     icon: Shield,
     image: productViper,
