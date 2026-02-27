@@ -48,7 +48,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg text-text-secondary max-w-lg mb-8">
 
-              Spray al peperoncino professionale per la tua protezione quotidiana.
+              Spray al peperoncino professionali per la tua protezione quotidiana.
               Legale, compatto, efficace.
             </motion.p>
 
