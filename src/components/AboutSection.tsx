@@ -2,7 +2,7 @@ import { motion, useInView, useMotionValue, useTransform, animate } from "framer
 import { useRef, useEffect, useState } from "react";
 
 const stats = [
-  { value: 25, suffix: "+", label: "Prodotti in catalogo" },
+  { value: 25, suffix: "+", label: "Anni di Esperienza" },
   { value: 0, suffix: "", label: "SICUREZZA" },
   { value: 98, suffix: "%", label: "Clienti soddisfatti" },
   { value: 100, suffix: "%", label: "Legale e certificato" },
