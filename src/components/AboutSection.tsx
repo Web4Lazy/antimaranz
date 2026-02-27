@@ -8,7 +8,7 @@ const stats = [
   { value: 100, suffix: "%", label: "Legale e certificato" },
 ] as const;
 
-const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) => {
+const AnimatedNumber = ({ value, suffix, className }: { value: number; suffix: string; className?: string }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
   const [display, setDisplay] = useState(0);
@@ -25,7 +25,7 @@ const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) =>
   }, [isInView, value]);
 
   return (
-    <span ref={ref} className="text-3xl md:text-4xl font-extrabold text-primary">
+    <span ref={ref} className={`text-3xl md:text-4xl font-extrabold ${className || "text-primary"}`}>
       {display}{suffix}
     </span>
   );
@@ -74,14 +74,20 @@ const AboutSection = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
-                className="bg-surface-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
+                className={`rounded-2xl p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover ${
+                  i === 0
+                    ? "bg-secondary border-secondary/50 hover:border-secondary"
+                    : i === 1
+                    ? "bg-primary border-primary/50 hover:border-primary"
+                    : "bg-surface-card border-border/50 hover:border-primary/30"
+                }`}
               >
                 {'value' in stat ? (
-                  <AnimatedNumber value={stat.value} suffix={stat.suffix} />
+                  <AnimatedNumber value={stat.value} suffix={stat.suffix} className={i < 2 ? "text-white" : undefined} />
                 ) : (
-                  <span className="text-3xl md:text-4xl font-extrabold text-primary">{stat.text}</span>
+                  <span className={`text-3xl md:text-4xl font-extrabold ${i < 2 ? "text-white" : "text-primary"}`}>{stat.text}</span>
                 )}
-                <p className="text-sm text-text-secondary mt-2">{stat.label}</p>
+                <p className={`text-sm mt-2 ${i < 2 ? "text-white/80" : "text-text-secondary"}`}>{stat.label}</p>
               </motion.div>
             ))}
           </div>
