@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --background: 240 12% 13%;
+    --background: 60 10% 15%;
     --foreground: 0 0% 96%;
 
-    --card: 240 10% 18%;
+    --card: 60 10% 19%;
     --card-foreground: 0 0% 96%;
 
-    --popover: 240 10% 18%;
+    --popover: 60 10% 19%;
     --popover-foreground: 0 0% 96%;
 
     --primary: 25 100% 50%;
@@ -19,8 +19,8 @@
     --secondary: 60 10% 19%;
     --secondary-foreground: 0 0% 96%;
 
-    --muted: 240 10% 18%;
-    --muted-foreground: 240 4% 64%;
+    --muted: 60 10% 19%;
+    --muted-foreground: 60 4% 64%;
 
     --accent: 25 100% 50%;
     --accent-foreground: 0 0% 100%;
@@ -28,8 +28,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 8% 25%;
-    --input: 240 8% 25%;
+    --border: 60 8% 28%;
+    --input: 60 8% 28%;
     --ring: 25 100% 50%;
 
     --radius: 0.75rem;
@@ -37,9 +37,9 @@
     --accent-hover: 26 100% 60%;
     --accent-soft: 25 100% 50%;
     --success: 142 69% 58%;
-    --surface-dark: 240 12% 13%;
-    --surface-card: 240 10% 18%;
-    --surface-elevated: 240 9% 23%;
+    --surface-dark: 60 10% 15%;
+    --surface-card: 60 10% 19%;
+    --surface-elevated: 60 9% 24%;
     --text-secondary: 240 4% 64%;
     --overlay-product: 240 12% 13%;
 
@@ -52,24 +52,24 @@
   }
 
   .dark {
-    --background: 240 12% 13%;
+    --background: 60 10% 15%;
     --foreground: 0 0% 96%;
-    --card: 240 10% 18%;
+    --card: 60 10% 19%;
     --card-foreground: 0 0% 96%;
-    --popover: 240 10% 18%;
+    --popover: 60 10% 19%;
     --popover-foreground: 0 0% 96%;
     --primary: 25 100% 50%;
     --primary-foreground: 0 0% 100%;
     --secondary: 60 10% 19%;
     --secondary-foreground: 0 0% 96%;
-    --muted: 240 10% 18%;
-    --muted-foreground: 240 4% 64%;
+    --muted: 60 10% 19%;
+    --muted-foreground: 60 4% 64%;
     --accent: 25 100% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62% 31%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 8% 25%;
-    --input: 240 8% 25%;
+    --border: 60 8% 28%;
+    --input: 60 8% 28%;
     --ring: 25 100% 50%;
   }
 }
@@ -126,13 +126,13 @@
   }
 
   .glass {
-    background: hsl(240 10% 18% / 0.6);
+    background: hsl(60 10% 19% / 0.6);
     backdrop-filter: blur(20px);
-    border: 1px solid hsl(240 8% 25% / 0.5);
+    border: 1px solid hsl(60 8% 28% / 0.5);
   }
 
   .glass-navbar {
-    background: hsl(240 12% 13% / 0.8);
+    background: hsl(60 10% 15% / 0.8);
     backdrop-filter: blur(16px);
   }
 
