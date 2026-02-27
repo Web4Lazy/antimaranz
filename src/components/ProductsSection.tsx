@@ -53,9 +53,14 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
           <p className="text-sm text-white/80 mb-5 leading-relaxed">
             {product.description}
           </p>
-          <Button variant="pill" size="sm" className="bg-white text-black hover:bg-white/90">
-            Dettagli <ArrowRight size={14} />
-          </Button>
+          <div className="flex gap-3">
+            <Button variant="pill" size="sm" className="bg-white text-black hover:bg-white/90">
+              Dettagli <ArrowRight size={14} />
+            </Button>
+            <Button variant="pill" size="sm" className="bg-primary text-white hover:bg-primary/90">
+              Compra Ora
+            </Button>
+          </div>
         </div>
       </div>
     </motion.div>
