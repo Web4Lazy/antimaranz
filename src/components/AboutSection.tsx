@@ -2,8 +2,8 @@ import { motion, useInView, useMotionValue, useTransform, animate } from "framer
 import { useRef, useEffect, useState } from "react";
 
 const stats = [
-  { value: 2, suffix: "+", label: "Prodotti in catalogo" },
-  { value: 10, suffix: "+", label: "Anni di esperienza" },
+  { value: 25, suffix: "+", label: "Prodotti in catalogo" },
+  { value: 0, suffix: "", label: "SICUREZZA" },
   { value: 98, suffix: "%", label: "Clienti soddisfatti" },
   { value: 100, suffix: "%", label: "Legale e certificato" },
 ];
