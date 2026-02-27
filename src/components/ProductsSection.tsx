@@ -44,7 +44,7 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
 
       {/* Overlay panel - hidden by default, slides up on hover */}
       <div
-        className={`absolute bottom-0 left-0 right-0 bg-black/90 px-6 transition-all duration-400 ease-out overflow-hidden ${
+        className={`absolute bottom-0 left-0 right-0 bg-[#36362e]/95 px-6 transition-all duration-400 ease-out overflow-hidden ${
           hovered ? "max-h-[300px]" : "max-h-0"
         }`}
       >
