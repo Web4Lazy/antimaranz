@@ -43,29 +43,21 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
       </div>
 
       {/* Overlay panel - hidden by default, slides up on hover */}
-      <motion.div
-        className="absolute bottom-0 left-0 right-0 bg-black/90 px-6 flex flex-col justify-end overflow-hidden"
-        initial={false}
-        animate={{ height: hovered ? "60%" : "0%" }}
-        transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+      <div
+        className={`absolute bottom-0 left-0 right-0 bg-black/90 px-6 transition-all duration-400 ease-out overflow-hidden ${
+          hovered ? "max-h-[300px]" : "max-h-0"
+        }`}
       >
         <div className="py-6">
           <h3 className="text-lg font-bold text-white mb-2">{product.name}</h3>
-
-          <motion.div
-            initial={false}
-            animate={{ opacity: hovered ? 1 : 0 }}
-            transition={{ duration: 0.3, delay: hovered ? 0.15 : 0 }}
-          >
-            <p className="text-sm text-white/80 mb-5 leading-relaxed">
-              {product.description}
-            </p>
-            <Button variant="pill" size="sm" className="bg-white text-black hover:bg-white/90">
-              Dettagli <ArrowRight size={14} />
-            </Button>
-          </motion.div>
+          <p className="text-sm text-white/80 mb-5 leading-relaxed">
+            {product.description}
+          </p>
+          <Button variant="pill" size="sm" className="bg-white text-black hover:bg-white/90">
+            Dettagli <ArrowRight size={14} />
+          </Button>
         </div>
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
