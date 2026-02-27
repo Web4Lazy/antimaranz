@@ -81,7 +81,7 @@ const ProductsSection = () => {
           <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase border border-primary/30 rounded-full bg-accent-soft text-primary mb-4">
             I Nostri Prodotti
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold">
+          <h2 className="text-4xl md:text-5xl font-extrabold">
             Scegli la Tua <span className="font-serif-italic font-normal">Protezione</span>
           </h2>
         </motion.div>
