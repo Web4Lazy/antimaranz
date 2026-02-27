@@ -1,12 +1,21 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Shield, Users } from "lucide-react";
+import heroBg from "@/assets/hero-bg.mp4";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background placeholder */}
-      <div className="absolute inset-0 bg-surface-card">
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+          src={heroBg}
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
       </div>
 
