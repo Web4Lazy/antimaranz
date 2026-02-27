@@ -2,19 +2,21 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Shield, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import productAntimaranz from "@/assets/product-antimaranz.png";
+import productViper from "@/assets/product-viper.png";
 
 const products = [
   {
     name: "AntiMaranz Compact",
     description: "Spray compatto da borsa, 15ml, gittata 3 metri. Perfetto per chi vuole protezione discreta e sempre a portata di mano.",
     icon: Shield,
-    placeholder: "Immagine Prodotto 1",
+    image: productAntimaranz,
   },
   {
     name: "AntiMaranz Pro",
     description: "Spray professionale, 40ml, gittata 5 metri, con clip cintura. La scelta per chi non scende a compromessi sulla sicurezza.",
     icon: Shield,
-    placeholder: "Immagine Prodotto 2",
+    image: productViper,
   },
 ];
 
@@ -36,9 +38,8 @@ const ProductCard = ({ product, index }: { product: typeof products[0]; index: n
       onMouseLeave={() => setHovered(false)}
     >
       {/* Placeholder image bg */}
-      <div className="absolute inset-0 bg-surface-elevated flex flex-col items-center justify-center gap-3">
-        <product.icon size={48} className="text-muted-foreground/40" />
-        <span className="text-sm text-muted-foreground/60">{product.placeholder}</span>
+      <div className="absolute inset-0 bg-surface-elevated flex items-center justify-center">
+        <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
       </div>
 
       {/* Overlay panel */}

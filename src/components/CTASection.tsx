@@ -14,7 +14,7 @@ const CTASection = () => {
     setEmail("");
   };
 
-  return;
+  return null;
 
 
 
