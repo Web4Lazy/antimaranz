@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Shield, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import productAntimaranz from "@/assets/product-antimaranz.png";
+import productViper from "@/assets/product-viper.png";
 
 const products = [
   {
