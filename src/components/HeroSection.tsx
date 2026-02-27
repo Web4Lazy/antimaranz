@@ -1,21 +1,12 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Shield, Users } from "lucide-react";
-import heroBg from "@/assets/hero-bg.mp4";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background placeholder */}
-      <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover"
-          src={heroBg}
-        />
+      <div className="absolute inset-0 bg-surface-card">
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
       </div>
 
@@ -77,23 +68,23 @@ const HeroSection = () => {
           </div>
 
           {/* Right stats card */}
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="glass rounded-2xl p-8 max-w-md mx-auto lg:ml-auto">
+          
 
-            <div className="grid grid-cols-2 gap-6 mb-6">
-              <div className="text-center">
-                <span className="text-4xl font-extrabold text-primary">2</span>
-                <p className="text-sm text-text-secondary mt-1">Prodotti Disponibili</p>
-              </div>
-              <div className="text-center">
-                <span className="text-4xl font-extrabold text-primary">100%</span>
-                <p className="text-sm text-text-secondary mt-1">Legale in Italia</p>
-              </div>
-            </div>
-          </motion.div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </section>);
