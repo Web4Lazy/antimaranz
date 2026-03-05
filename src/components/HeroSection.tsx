@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.mp4";
+import heroBgMobile from "@/assets/hero-bg-mobile.mp4";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Video background */}
@@ -13,7 +17,7 @@ const HeroSection = () => {
           loop
           playsInline
           className="w-full h-full object-cover"
-          src={heroBg}
+          src={isMobile ? heroBgMobile : heroBg}
         />
         <div className="absolute inset-0 bg-background/30" />
       </div>
