@@ -25,7 +25,7 @@ const AnimatedNumber = ({ value, suffix, className }: { value: number; suffix: s
   }, [isInView, value]);
 
   return (
-    <span ref={ref} className={`text-3xl md:text-4xl font-extrabold ${className || "text-primary"}`}>
+    <span ref={ref} className={`text-2xl sm:text-3xl md:text-4xl font-extrabold break-words ${className || "text-primary"}`}>
       {display}{suffix}
     </span>
   );
@@ -74,7 +74,7 @@ const AboutSection = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
-                className={`rounded-2xl p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover ${
+                className={`rounded-2xl p-4 sm:p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover overflow-hidden ${
                   i === 0
                     ? "bg-secondary border-secondary/50 hover:border-secondary"
                     : i === 1
@@ -85,9 +85,9 @@ const AboutSection = () => {
                 {'value' in stat ? (
                   <AnimatedNumber value={stat.value} suffix={stat.suffix} className={i < 2 ? "text-white" : undefined} />
                 ) : (
-                  <span className={`text-3xl md:text-4xl font-extrabold ${i < 2 ? "text-white" : "text-primary"}`}>{stat.text}</span>
+                  <span className={`text-2xl sm:text-3xl md:text-4xl font-extrabold break-words ${i < 2 ? "text-white" : "text-primary"}`}>{stat.text}</span>
                 )}
-                <p className={`text-sm mt-2 ${i < 2 ? "text-white/80" : "text-text-secondary"}`}>{stat.label}</p>
+                <p className={`text-xs sm:text-sm mt-2 ${i < 2 ? "text-white/80" : "text-text-secondary"}`}>{stat.label}</p>
               </motion.div>
             ))}
           </div>
