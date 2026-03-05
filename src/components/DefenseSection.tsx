@@ -19,7 +19,7 @@ const DefenseSection = () => {
               <span className="text-primary">Identificazione garantita</span>
             </h2>
             <p className="text-text-secondary mb-8 leading-relaxed">
-              I nostri spray al peperoncino hanno una doppia funzione: neutralizzano l'aggressore sul momento e lo marchiano con inchiostro UV indelebile.
+              I nostri spray al peperoncino hanno una doppia funzione: neutralizzano l'aggressore sul momento e lo marchiano con inchiostro rosso indelebile.
             </p>
 
             <div className="space-y-6">
@@ -40,9 +40,9 @@ const DefenseSection = () => {
                   <Scan size={20} className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1">Inchiostro identificativo UV</h3>
+                  <h3 className="font-bold text-lg mb-1">Inchiostro identificativo rosso</h3>
                   <p className="text-sm text-text-secondary leading-relaxed">
-                    Insieme allo spray, un inchiostro invisibile si deposita sulla pelle e sui vestiti dell'aggressore. Non si vede a occhio nudo, resiste ai lavaggi per giorni e viene rilevato dalle forze dell'ordine con una semplice lampada UV — collegando l'aggressore alla scena anche a distanza di tempo.
+                    Insieme allo spray, un inchiostro rosso indelebile si deposita sulla pelle e sui vestiti dell'aggressore. È visibile immediatamente, resiste ai lavaggi per giorni e permette alle forze dell'ordine di collegare l'aggressore alla scena anche a distanza di tempo.
                   </p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ const DefenseSection = () => {
             <div className="aspect-square rounded-2xl overflow-hidden border border-border/50">
               <img
                 src={defenseImg}
-                alt="Spray al peperoncino con inchiostro UV per difesa e identificazione"
+                alt="Spray al peperoncino con inchiostro rosso per difesa e identificazione"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
