@@ -85,7 +85,7 @@ const AboutSection = () => {
                 {'value' in stat ? (
                   <AnimatedNumber value={stat.value} suffix={stat.suffix} className={i < 2 ? "text-white" : undefined} />
                 ) : (
-                  <span className={`text-2xl sm:text-3xl md:text-4xl font-extrabold break-words ${i < 2 ? "text-white" : "text-primary"}`}>{stat.text}</span>
+                  <span className={`text-lg sm:text-2xl md:text-4xl font-extrabold break-all ${i < 2 ? "text-white" : "text-primary"}`}>{stat.text}</span>
                 )}
                 <p className={`text-xs sm:text-sm mt-2 ${i < 2 ? "text-white/80" : "text-text-secondary"}`}>{stat.label}</p>
               </motion.div>
