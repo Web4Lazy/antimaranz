@@ -7,25 +7,25 @@ const testimonials = [
   name: "Giulia R.",
   city: "Milano",
   initials: "GR",
-  text: "Mi sento molto più sicura da quando porto l'AntiMaranz Compact nella borsa. Compatto e discreto, esattamente quello che cercavo."
+  text: "Porto l'AntiMaranz sempre in borsa. È piccolissimo, non pesa nulla e mi dà una sicurezza enorme quando torno a casa la sera."
 },
 {
   name: "Marco T.",
   city: "Roma",
   initials: "MT",
-  text: "Ho regalato l'AntiMaranz Pro a mia moglie. La qualità è eccellente e sapere che è completamente legale ci dà tranquillità."
+  text: "Ho preso il Viper per mia moglie. La clip cintura è comodissima e la gittata di 5 metri fa davvero la differenza. Qualità top."
 },
 {
   name: "Alessia B.",
   city: "Torino",
   initials: "AB",
-  text: "Prodotto di altissima qualità. Lo porto sempre con me durante le corse serali. Consiglio vivamente a tutte le donne!"
+  text: "L'AntiMaranz è perfetto per le corse serali: leggero, discreto e sempre a portata di mano. Lo consiglio a tutte le donne!"
 },
 {
   name: "Lorenzo P.",
   city: "Napoli",
   initials: "LP",
-  text: "Spedizione velocissima e prodotto conforme alla descrizione. La clip cintura del modello Pro è comodissima."
+  text: "Spedizione velocissima. Ho scelto il Viper per la maggiore capacità e l'impugnatura ergonomica. Prodotto serio e 100% legale."
 }];
 
 
