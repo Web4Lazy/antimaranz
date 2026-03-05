@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, PanInfo } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
@@ -31,9 +31,15 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(0);
 
-  const next = () => setCurrent((c) => (c + 1) % testimonials.length);
-  const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
+  const next = () => { setDirection(1); setCurrent((c) => (c + 1) % testimonials.length); };
+  const prev = () => { setDirection(-1); setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length); };
+
+  const handleDragEnd = (_: any, info: PanInfo) => {
+    if (info.offset.x < -50) next();
+    else if (info.offset.x > 50) prev();
+  };
 
   const t = testimonials[current];
 
@@ -56,11 +62,15 @@ const TestimonialsSection = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={current}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.4 }}
-              className="bg-background rounded-2xl p-8 border border-border/50 text-center">
+              initial={{ opacity: 0, x: direction >= 0 ? 60 : -60 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: direction >= 0 ? -60 : 60 }}
+              transition={{ duration: 0.35 }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.3}
+              onDragEnd={handleDragEnd}
+              className="bg-background rounded-2xl p-8 border border-border/50 text-center cursor-grab active:cursor-grabbing">
 
               <Quote size={32} className="mx-auto mb-4 text-primary" />
               <div className="flex justify-center gap-1 mb-6">
