@@ -70,6 +70,9 @@ const AboutSection = () => {
                 <br />Selezioniamo spray al peperoncino di qualità professionale, prodotti in Italia e 100% legali. Tutta la competenza di chi lavora nella sicurezza da decenni, in un prodotto semplice e alla portata di tutti.
                 <br />La tua difesa personale, concreta e senza complicazioni.
               </p>
+              <p>
+                Ogni prodotto viene scelto secondo criteri precisi: qualità, affidabilità, funzionalità e semplicità d'uso. Grazie all'esperienza maturata nel settore investigativo e tecnologico, siamo in grado di individuare le migliori soluzioni presenti sul mercato.
+              </p>
             </div>
           </motion.div>
 
