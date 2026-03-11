@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/antimaranz/',
+  base: mode === 'production' ? '/antimaranz/' : '/',
   server: {
     host: "::",
     port: 8080,
