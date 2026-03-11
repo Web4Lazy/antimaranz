@@ -137,9 +137,6 @@ const AboutSection = () => {
           <p className="text-text-secondary leading-relaxed">
             Ogni prodotto viene scelto secondo criteri precisi: qualità, affidabilità, funzionalità e semplicità d'uso. Grazie all'esperienza maturata nel settore investigativo e tecnologico, siamo in grado di individuare le migliori soluzioni presenti sul mercato.
           </p>
-          <p className="text-sm text-primary font-semibold tracking-wide">
-            Con Monty Soul, la sicurezza diventa semplice, concreta e alla portata di chiunque.
-          </p>
         </motion.div>
       </div>
     </section>);
