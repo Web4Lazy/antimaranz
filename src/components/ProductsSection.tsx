@@ -34,7 +34,7 @@ const products = [
     description: "Spray professionale, 40ml, gittata 5 metri, con clip cintura. La scelta per chi non scende a compromessi sulla sicurezza.",
     icon: Shield,
     image: productViper,
-    buyUrl: "#",
+    buyUrl: "https://montysoul.it/products/viper-spray-peperoncino-antiaggressione-16ml?_pos=1&_sid=23d726085&_ss=r",
     specs: [
       { icon: Droplets, label: "Capacità", value: "40 ml" },
       { icon: Target, label: "Gittata", value: "5 metri" },
