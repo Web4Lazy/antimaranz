@@ -36,62 +36,118 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+const contexts = [
+  "Abitazioni private",
+  "Uffici e studi professionali",
+  "Attività commerciali",
+  "Aziende e ambienti di lavoro",
+  "Utilizzo personale e familiare",
+];
+
 const AboutSection = () => {
   return (
     <section id="chi-siamo" className="section-light py-20 md:py-32">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left text */}
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase border border-primary/30 rounded-full bg-accent-soft text-primary mb-4">
               Chi Siamo
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-              Non Solo Spray,{" "}
-              <span className="font-serif-italic font-normal">È Tranquillità</span>
+              Monty Soul,{" "}
+              <span className="font-serif-italic font-normal">Sicurezza Accessibile</span>
             </h2>
-            <p className="text-text-secondary leading-relaxed">
-              AntiMaranz nasce dalla volontà di offrire a tutti uno strumento di difesa personale
-              affidabile, legale e di alta qualità. I nostri spray al peperoncino sono progettati
-              per garantire la massima efficacia in situazioni di pericolo, mantenendo la semplicità
-              d'uso che serve quando conta davvero.
-            </p>
+            <div className="space-y-4 text-text-secondary leading-relaxed">
+              <p>
+                <strong className="text-foreground">Monty Soul</strong> è un marchio specializzato nella selezione e distribuzione di tecnologie per la sicurezza personale, domestica e aziendale, nato dall'esperienza di <strong className="text-foreground">DECATRONIC</strong>, realtà con oltre 35 anni di attività nel settore investigativo e delle tecnologie di sicurezza.
+              </p>
+              <p>
+                La nostra esperienza nel mondo delle indagini, della prevenzione e della sicurezza tecnologica ci ha permesso di conoscere a fondo le esigenze reali di privati, aziende e professionisti. Da questa conoscenza nasce Monty Soul: un progetto pensato per portare anche nel mercato e-commerce strumenti affidabili, innovativi e facili da utilizzare, normalmente utilizzati in ambito investigativo e professionale.
+              </p>
+              <p>
+                Selezioniamo con attenzione prodotti dedicati alla protezione personale, alla sicurezza degli ambienti, alla tutela della privacy e alla prevenzione dei rischi, offrendo soluzioni tecnologiche che aiutano le persone a sentirsi più sicure nella vita quotidiana.
+              </p>
+            </div>
           </motion.div>
 
-          {/* Right stats */}
-          <div className="grid grid-cols-2 gap-4">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                variants={sectionVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, delay: i * 0.15 }}
-                className={`rounded-2xl p-4 sm:p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover overflow-hidden ${
-                  i === 0
-                    ? "bg-secondary border-secondary/50 hover:border-secondary"
-                    : i === 1
-                    ? "bg-primary border-primary/50 hover:border-primary"
-                    : "bg-surface-card border-border/50 hover:border-primary/30"
-                }`}
-              >
-                {'value' in stat ? (
-                  <AnimatedNumber value={stat.value} suffix={stat.suffix} className={i < 2 ? "text-white" : undefined} />
-                ) : (
-                  <span className={`text-lg sm:text-2xl md:text-4xl font-extrabold break-all ${i < 2 ? "text-white" : "text-primary"}`}>{stat.text}</span>
-                )}
-                <p className={`text-xs sm:text-sm mt-2 ${i < 2 ? "text-white/80" : "text-text-secondary"}`}>{stat.label}</p>
-              </motion.div>
-            ))}
+          {/* Right: stats + contexts + mission */}
+          <div className="space-y-6">
+            {/* Stats grid */}
+            <div className="grid grid-cols-2 gap-4">
+              {stats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  variants={sectionVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.6, delay: i * 0.15 }}
+                  className={`rounded-2xl p-4 sm:p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover overflow-hidden ${
+                    i === 0
+                      ? "bg-secondary border-secondary/50 hover:border-secondary"
+                      : i === 1
+                      ? "bg-primary border-primary/50 hover:border-primary"
+                      : "bg-surface-card border-border/50 hover:border-primary/30"
+                  }`}
+                >
+                  {'value' in stat ? (
+                    <AnimatedNumber value={stat.value} suffix={stat.suffix} className={i < 2 ? "text-white" : undefined} />
+                  ) : (
+                    <span className={`text-lg sm:text-2xl md:text-4xl font-extrabold break-all ${i < 2 ? "text-white" : "text-primary"}`}>{stat.text}</span>
+                  )}
+                  <p className={`text-xs sm:text-sm mt-2 ${i < 2 ? "text-white/80" : "text-text-secondary"}`}>{stat.label}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Contexts */}
+            <motion.div
+              variants={sectionVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="rounded-2xl p-6 bg-surface-card border border-border/50"
+            >
+              <h3 className="font-semibold text-sm uppercase tracking-wider text-primary mb-4">Contesti d'uso</h3>
+              <ul className="space-y-2">
+                {contexts.map((ctx) => (
+                  <li key={ctx} className="flex items-center gap-2 text-sm text-text-secondary">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                    {ctx}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
         </div>
+
+        {/* Bottom mission block */}
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-16 max-w-3xl mx-auto text-center space-y-4"
+        >
+          <p className="text-text-secondary leading-relaxed">
+            Ogni prodotto viene scelto secondo criteri precisi: qualità, affidabilità, funzionalità e semplicità d'uso. Grazie all'esperienza maturata nel settore investigativo e tecnologico, siamo in grado di individuare le migliori soluzioni presenti sul mercato.
+          </p>
+          <blockquote className="text-xl md:text-2xl font-extrabold text-foreground border-l-4 border-primary pl-6 text-left">
+            La nostra missione è semplice: rendere la sicurezza più accessibile, offrendo tecnologie efficaci, moderne e alla portata di tutti.
+          </blockquote>
+          <p className="text-sm text-primary font-semibold tracking-wide">
+            Con Monty Soul, la sicurezza diventa semplice, concreta e alla portata di chiunque.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
