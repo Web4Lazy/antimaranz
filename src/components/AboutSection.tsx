@@ -46,7 +46,7 @@ const contexts = [
 
 const AboutSection = () => {
   return (
-    <section id="chi-siamo" className="section-light py-20 md:py-32">
+    <section id="chi-siamo" className="section-light py-20 md:py-32" data-v="2">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left text */}
