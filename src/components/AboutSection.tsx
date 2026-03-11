@@ -70,6 +70,9 @@ const AboutSection = () => {
                 <br />Selezioniamo spray al peperoncino di qualità professionale, prodotti in Italia e 100% legali. Tutta la competenza di chi lavora nella sicurezza da decenni, in un prodotto semplice e alla portata di tutti.
                 <br />La tua difesa personale, concreta e senza complicazioni.
               </p>
+              <p>
+                Ogni prodotto viene scelto secondo criteri precisi: qualità, affidabilità, funzionalità e semplicità d'uso. Grazie all'esperienza maturata nel settore investigativo e tecnologico, siamo in grado di individuare le migliori soluzioni presenti sul mercato.
+              </p>
             </div>
           </motion.div>
 
@@ -125,19 +128,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Bottom mission block */}
-        <motion.div
-          variants={sectionVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-16 max-w-3xl mx-auto text-center space-y-4">
-          
-          <p className="text-text-secondary leading-relaxed">
-            Ogni prodotto viene scelto secondo criteri precisi: qualità, affidabilità, funzionalità e semplicità d'uso. Grazie all'esperienza maturata nel settore investigativo e tecnologico, siamo in grado di individuare le migliori soluzioni presenti sul mercato.
-          </p>
-        </motion.div>
       </div>
     </section>);
 
