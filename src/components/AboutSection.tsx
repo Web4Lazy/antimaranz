@@ -66,7 +66,7 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                <strong className="text-foreground">AntiMaranz</strong> è un progetto di <strong className="text-foreground">Monty Soul</strong>, brand specializzato in tecnologie per la sicurezza personale nato dall'esperienza di <strong className="text-foreground">DECATRONIC</strong> — oltre 35 anni nel settore investigativo e della sicurezza professionale.
+                <strong className="text-primary">AntiMaranz</strong> è un progetto di <strong className="text-primary">Monty Soul</strong>, brand specializzato in tecnologie per la sicurezza personale nato dall'esperienza di <strong className="text-primary">DECATRONIC</strong> — oltre 35 anni nel settore investigativo e della sicurezza professionale.
                 <br />Selezioniamo spray al peperoncino di qualità professionale, prodotti in Italia e 100% legali. Tutta la competenza di chi lavora nella sicurezza da decenni, in un prodotto semplice e alla portata di tutti.
                 <br />La tua difesa personale, concreta e senza complicazioni.
               </p>
