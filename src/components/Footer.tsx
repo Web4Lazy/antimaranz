@@ -38,7 +38,10 @@ const Footer = () => {
 
         <div className="border-t border-border/50 pt-6 text-center">
           <p className="text-xs text-muted-foreground">
-            © 2025 AntiMaranz. Tutti i diritti riservati.
+            © 2025 AntiMaranz — un brand di Monty Soul Montanari Gianluca — P.IVA 03756760132
+          </p>
+          <p className="text-xs text-muted-foreground mt-1">
+            Via Seminario 11, 23900 Lecco (LC)
           </p>
         </div>
       </div>
