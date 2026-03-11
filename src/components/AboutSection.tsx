@@ -66,13 +66,9 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                <strong className="text-primary">Monty Soul</strong> è un marchio specializzato nella selezione e distribuzione di tecnologie per la sicurezza personale, domestica e aziendale, nato dall'esperienza di <strong className="text-foreground">DECATRONIC</strong>, realtà con oltre 35 anni di attività nel settore investigativo e delle tecnologie di sicurezza.
-              </p>
-              <p>
-                La nostra esperienza nel mondo delle indagini, della prevenzione e della sicurezza tecnologica ci ha permesso di conoscere a fondo le esigenze reali di privati, aziende e professionisti. Da questa conoscenza nasce Monty Soul: un progetto pensato per portare anche nel mercato e-commerce strumenti affidabili, innovativi e facili da utilizzare, normalmente utilizzati in ambito investigativo e professionale.
-              </p>
-              <p>
-                Selezioniamo con attenzione prodotti dedicati alla protezione personale, alla sicurezza degli ambienti, alla tutela della privacy e alla prevenzione dei rischi, offrendo soluzioni tecnologiche che aiutano le persone a sentirsi più sicure nella vita quotidiana.
+                <strong className="text-foreground">AntiMaranz</strong> è un progetto di <strong className="text-foreground">Monty Soul</strong>, brand specializzato in tecnologie per la sicurezza personale nato dall'esperienza di <strong className="text-foreground">DECATRONIC</strong> — oltre 35 anni nel settore investigativo e della sicurezza professionale.
+                <br />Selezioniamo spray al peperoncino di qualità professionale, prodotti in Italia e 100% legali. Tutta la competenza di chi lavora nella sicurezza da decenni, in un prodotto semplice e alla portata di tutti.
+                <br />La tua difesa personale, concreta e senza complicazioni.
               </p>
             </div>
           </motion.div>
