@@ -12,7 +12,7 @@ const products = [
     description: "Spray compatto da borsa, 15ml, gittata 3 metri. Perfetto per chi vuole protezione discreta e sempre a portata di mano.",
     icon: Shield,
     image: productAntimaranz,
-    buyUrl: "#",
+    buyUrl: "https://montysoul.it/products/antimaranz-spray-peperoncino-difensivo-16ml",
     specs: [
       { icon: Droplets, label: "Capacità", value: "15 ml" },
       { icon: Target, label: "Gittata", value: "3 metri" },
