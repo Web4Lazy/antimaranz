@@ -1,10 +1,25 @@
+import { useEffect } from "react";
+
 const footerLinks = {
   Prodotti: ["AntiMaranz", "Viper"],
   Informazioni: ["Chi Siamo", "Come Funziona", "FAQ"],
-  Legale: ["Privacy Policy", "Termini e Condizioni", "Cookie Policy"],
 };
 
 const Footer = () => {
+  useEffect(() => {
+    const loader = () => {
+      const s = document.createElement("script");
+      s.src = "https://cdn.iubenda.com/iubenda.js";
+      document.body.appendChild(s);
+    };
+    if (document.readyState === "complete") {
+      loader();
+    } else {
+      window.addEventListener("load", loader);
+      return () => window.removeEventListener("load", loader);
+    }
+  }, []);
+
   return (
     <footer className="bg-surface-card border-t border-border/50 pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -34,6 +49,31 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+
+          {/* Legale con iubenda */}
+          <div>
+            <h4 className="font-semibold text-sm mb-4">Legale</h4>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="https://www.iubenda.com/privacy-policy/99023595"
+                  className="iubenda-black iubenda-noiframe iubenda-embed text-sm text-text-secondary hover:text-foreground transition-colors"
+                  title="Privacy Policy"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.iubenda.com/privacy-policy/99023595/cookie-policy"
+                  className="iubenda-black iubenda-noiframe iubenda-embed text-sm text-text-secondary hover:text-foreground transition-colors"
+                  title="Cookie Policy"
+                >
+                  Cookie Policy
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="border-t border-border/50 pt-6 text-center">
